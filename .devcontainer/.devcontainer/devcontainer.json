@@ -1,0 +1,16 @@
+{
+  "name": "My PHP Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "settings": { 
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "felixfbecker.php-debug"
+  ],
+  "forwardPorts": [3306],
+  "postCreateCommand": "echo 'Environment build complete.'",
+  "remoteUser": "vscode"
+}
